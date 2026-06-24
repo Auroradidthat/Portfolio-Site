@@ -1,23 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aurora's Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aurora's Portfolio</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
         <nav aria-label="Primary Navigation">
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Projects</a></li>
-                <li><a href="">Design</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
             </ul>
         </nav>
-    </div>
-    
-</body>
+
+        <header id="header" class="header-styles">
+            <div>
+                <h1>Aurora</h1>
+                <h2>Front-End Web Developer | Web Designer | Digital Accessibility Analyst</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
+                    eu fugiat nulla pariatur.
+                </p>
+                <br>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
+                    eu fugiat nulla pariatur.
+                </p>
+
+                <div class="communication">
+                    <img class="icons" src="images/github-icon.svg" alt=""/>
+                    <a href="https://github.com/auroradidthat/">Visit My Github</a>
+                </div>
+                <div class="communication">
+                    <img class="icons" src="images/google-gmail.svg" alt=""/>
+                    <a href="">Email Me</a>
+                </div>
+                <div class="communication">
+                    <img class="icons" src="images/LinkedIn_icon.svg" alt=""/>
+                    <a href="https://www.linkedin.com/in/rodesignedthat/">Visit My Linkedin</a>
+                </div>
+            </div>
+            <div>
+                <img id="portrait" src="images/AuroraPFP.png" alt="Illustration of a woman in glasses smiling."/>
+            </div>
+        </header>
+
+        <div id="projects">
+            <h2>Projects</h2>
+            <article class="card">
+                <div>
+                    <h3>Project Name</h3>
+                    <p>In Progress</p>
+                </div>
+                <div>
+                    <img class="" src="#" alt=""/>
+                    <div>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna 
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
+                        </div>
+                        <div>
+                            <img src="#" alt=""/>
+                            <img src="#" alt=""/>
+                            <img src="#" alt=""/>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <footer>
+            <h2>Accessibility Statement</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus 
+                vitae erat facilisis tincidunt. Integer nec odio praesent libero, sed 
+                cursus ante dapibus diam. Sed nisi nulla, quis sem at nibh elementum 
+                imperdiet, duis sagittis ipsum, praesent mauris fusce nec tellus sed 
+                augue semper porta.
+            </p>
+            <p>Mauris massa, vestibulum lacinia arcu eget, nulla class aptent taciti 
+               sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
+               Curabitur sodales ligula in libero, sed dignissim lacinia nunc, curabitur 
+               tortor pellentesque nibh, aenean quam in scelerisque sem at dolor.
+            </p>
+            <br>
+            <p>Designed in Figma, and coded in Visual Studio Code by me. Built using 
+                vanilla HTML/CSS/JS, with accessibility baked in.
+            </p>
+        </footer>   
+    </body>
 </html>
