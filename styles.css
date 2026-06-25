@@ -1,5 +1,5 @@
 /*| TYPOGRAPHY |*/
-@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 /*|  GLOBAL  |*/
 
@@ -8,23 +8,43 @@
     padding: 0;
 }
 
+html {
+    background-color: #F5F3E7;
+}
 
 /*|  TEXT  |*/
 
 h1 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
     font-size: 8rem;
+    font-weight: 900;
+    font-style: italic;
+    background-image: linear-gradient(to right, #312E81 10%, #5B21B6 30%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
 }
 
 h2 {
+    font-family: "Montserrat", sans-serif;
     font-size: 3rem;
+    font-style: italic;
+    
 }
 
 h3 {
+    font-family: "Montserrat", sans-serif;
+    font-style: italic;
     font-size: 2rem;
 }
 
 p {
+     font-family: "Atkinson Hyperlegible Next", sans-serif;
+     font-optical-sizing: auto;
     font-size: 1.5rem;
+    color: #312E81;
 }
 
 /*|  SOCIAL MEDIA/REPO/EMAIL  |*/
@@ -65,4 +85,24 @@ header {
 #portrait {
     width: 40rem;
     height: auto;
+}
+
+#roles {
+    color: #9D174D;
+}
+
+/*|  CARD  |*/
+#projects h2 {
+    text-align: center;
+}
+
+.card {
+    display: flex:
+    
+}
+
+.card > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
