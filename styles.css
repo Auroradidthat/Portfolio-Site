@@ -1,11 +1,12 @@
 /*| TYPOGRAPHY |*/
 @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+
 /*|  GLOBAL  |*/
 
 * {
-    margin: 0;
-    padding: 0;
+    /*margin: 0;*/
+    padding: 0 0.50rem 0 0.50rem;
 }
 
 html {
@@ -31,6 +32,7 @@ h2 {
     font-family: "Montserrat", sans-serif;
     font-size: 3rem;
     font-style: italic;
+    color: #312E81;
     
 }
 
@@ -59,6 +61,19 @@ p {
     gap: 1rem;
 }
 
+.communication a{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    color: #312E81;
+    text-decoration: underline solid 4px;
+    text-underline-offset: 0.3rem;
+}
+
+.communication a:hover {
+    color: #9D174D;
+} 
+
 /*|  NAVIGATION  |*/
 ul {
 display: flex;
@@ -73,16 +88,31 @@ text-decoration: underline solid 5px;
 }
 
 ul a {
+    font-family: "Montserrat", sans-serif;
     font-size: 2.5rem;
+    font-weight: 900;
+    font-style: italic;
+    color: #312E81;
+    text-decoration: underline solid #312E81 5px;
+}
+
+ul a:hover {
+    color: #9D174D;
+    text-decoration: underline solid #9D174D 5px;
+}
+
+ul a:active {
+    color: #9D174D;
 }
 
 /*|  HEADER  |*/
 header {
     display: flex;
     flex-direction: row;
+    border-bottom: 20px solid #312E81;
 }
 
-#portrait {
+#header-portrait {
     width: 40rem;
     height: auto;
 }
@@ -92,17 +122,96 @@ header {
 }
 
 /*|  CARD  |*/
-#projects h2 {
-    text-align: center;
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 20px solid #312E81;
 }
 
 .card {
-    display: flex:
-    
+    display: flex;
+    flex-direction: column;
+    width: 61.1875rem;
+    border: solid 20px #312E81;
+}
+
+.card-title {
+    display: flex;
+    align-items: center;
+    color: #F5F3E7;
+}
+
+.card-title p {
+    color: #F5F3E7;
+}
+
+.card > div:first-child {
+    padding: 1rem;
+    background-color: #312E81;
+    margin: 0.5rem ;
 }
 
 .card > div {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.card-image {
+    width: 40rem;
+    height: auto;
+    padding: 0.5rem;
+}
+
+/*.card-description-stack {
+    display: flex;
+    flex-direction: column;
+    background-color: #312E81;
+    margin: 0.5rem;
+} */
+
+.card-description-stack {
+    display: inline-block;
+    align-self: flex-start;
+    background-color: #312E81;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    align-self: flex-start;
+}
+
+.card-description-stack > div:first-child {
+    background-color: #312E81;
+    padding: 0.5rem;
+}
+
+.card-description-stack > div:first-child p {
+    color: #F5F3E7;
+    
+}
+
+.tools {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tools p {
+    color: #F5F3E7;
+}
+
+.tool-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0.50rem;
+    background-color: #9D174D;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
