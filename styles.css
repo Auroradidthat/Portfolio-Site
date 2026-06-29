@@ -1,16 +1,24 @@
 /*| TYPOGRAPHY |*/
 @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+@media (max-width: 768px) {
+  .card > div {
+    flex-direction: column;
+  }
+}
 
 /*|  GLOBAL  |*/
 
 * {
-    /*margin: 0;*/
-    padding: 0 0.50rem 0 0.50rem;
+box-sizing: border-box;
 }
 
 html {
     background-color: #F5F3E7;
+}
+
+body {
+    margin: 0;
 }
 
 /*|  TEXT  |*/
@@ -18,7 +26,7 @@ html {
 h1 {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-    font-size: 8rem;
+    font-size: clamp(3rem, 8vw, 8rem);
     font-weight: 900;
     font-style: italic;
     background-image: linear-gradient(to right, #312E81 10%, #5B21B6 30%);
@@ -30,7 +38,7 @@ h1 {
 
 h2 {
     font-family: "Montserrat", sans-serif;
-    font-size: 3rem;
+    font-size: clamp(2rem, 5vw, 3rem);
     font-style: italic;
     color: #312E81;
     
@@ -39,29 +47,31 @@ h2 {
 h3 {
     font-family: "Montserrat", sans-serif;
     font-style: italic;
-    font-size: 2rem;
+    font-size: clamp(1.5rem, 3vw, 2rem);
 }
 
 p {
      font-family: "Atkinson Hyperlegible Next", sans-serif;
      font-optical-sizing: auto;
-    font-size: 1.5rem;
+    font-size: clamp(1rem, 3vw, 1.5rem);
     color: #312E81;
 }
 
 /*|  SOCIAL MEDIA/REPO/EMAIL  |*/
 
 .icons {
-    width: 2.5rem;
+    max-width: min(2.5rem, 8vw);
+    height: auto;
 }
 
 .communication {
     display: flex;
     align-items: center;
     gap: 1rem;
+    flex-wrap: wrap;
 }
 
-.communication a{
+.communication a {
     font-family: "Montserrat", sans-serif;
     font-weight: 900;
     font-style: italic;
@@ -80,7 +90,8 @@ display: flex;
 padding: 1.25rem 0;
 justify-content: center;
 align-items: flex-start;
-gap: 3.125rem;
+gap: 1.5rem;
+padding: 1.25rem 0;
 list-style-type: none;
 text-underline-offset: 0.6rem;
 text-decoration: underline solid 5px;
@@ -109,13 +120,20 @@ ul a:active {
 header {
     display: flex;
     flex-direction: row;
+    gap: 2rem;
     padding: 0 0 5rem 0;
     border-bottom: 20px solid #312E81;
 }
 
 #header-portrait {
-    width: 40rem;
+    width: 100%;
+    max-width: 80vw;
     height: auto;
+}
+
+#header > div {
+    width: 70vw;
+    height: 100%;
 }
 
 #roles {
@@ -125,6 +143,8 @@ header {
 /*|  CARD  |*/
 
 .projects {
+    width: 100%;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -133,14 +153,15 @@ header {
 }
 
 .card {
-    display: flex;
-    flex-direction: column;
-    width: 61.1875rem;
     border: solid 20px #312E81;
     text-decoration: none;
 }
 
 .card-link {
+    display: block;
+    width: 100%;
+    max-width: 61.1875rem;
+    margin: 0 auto;
     text-decoration: none;
 }
 
@@ -164,21 +185,22 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .card-image {
     width: 40rem;
+    max-width: 40rem;
     height: auto;
     padding: 0.5rem;
 }
 
 .card-description-stack {
-    display: inline-block;
-    align-self: flex-start;
+    flex: 1 1 18rem;
     background-color: #312E81;
     margin: 0.5rem;
     padding: 0.5rem;
-    align-self: flex-start;
 }
 
 .card-description-stack > div:first-child {
@@ -205,6 +227,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    gap: 0.75rem;
     padding: 0.50rem;
     background-color: #9D174D;
 }
@@ -213,14 +236,20 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 1rem;
 
 }
 
 .about-site {
     background-color:#312E81;
+    width: 100%;
+    max-width: 60rem;
 
 }
 
 .about-site p {
+    width: 100%;
+    padding: 1em;
+    max-width: 60rem;
     color:#F5F3E7;
 }
