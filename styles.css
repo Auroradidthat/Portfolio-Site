@@ -87,6 +87,14 @@ p {
 } 
 
 /*|  NAVIGATION  |*/
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color:#F5F3E7;
+    z-index: 100;
+}
+
 ul {
 display: flex;
 padding: 1.25rem 0;
@@ -224,6 +232,7 @@ header {
 
 .tools p {
     color: #F5F3E7;
+    font-size: 0.875rem;
 }
 
 .tool-container {
