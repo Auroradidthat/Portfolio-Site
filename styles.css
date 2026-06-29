@@ -109,6 +109,7 @@ ul a:active {
 header {
     display: flex;
     flex-direction: row;
+    padding: 0 0 5rem 0;
     border-bottom: 20px solid #312E81;
 }
 
@@ -128,6 +129,7 @@ header {
     flex-direction: column;
     align-items: center;
     border-bottom: 20px solid #312E81;
+    padding-bottom: 5rem;
 }
 
 .card {
@@ -135,6 +137,11 @@ header {
     flex-direction: column;
     width: 61.1875rem;
     border: solid 20px #312E81;
+    text-decoration: none;
+}
+
+.card-link {
+    text-decoration: none;
 }
 
 .card-title {
@@ -164,13 +171,6 @@ header {
     height: auto;
     padding: 0.5rem;
 }
-
-/*.card-description-stack {
-    display: flex;
-    flex-direction: column;
-    background-color: #312E81;
-    margin: 0.5rem;
-} */
 
 .card-description-stack {
     display: inline-block;
@@ -214,4 +214,13 @@ footer {
     flex-direction: column;
     align-items: center;
 
+}
+
+.about-site {
+    background-color:#312E81;
+
+}
+
+.about-site p {
+    color:#F5F3E7;
 }
