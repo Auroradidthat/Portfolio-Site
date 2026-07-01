@@ -1,12 +1,6 @@
 /*| TYPOGRAPHY |*/
 @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-@media (max-width: 768px) {
-  .card > div {
-    flex-direction: column;
-  }
-}
-
 /*|  GLOBAL  |*/
 
 * {
@@ -102,7 +96,6 @@ padding: 1.25rem 0;
 justify-content: center;
 align-items: flex-start;
 gap: 1.5rem;
-padding: 1.25rem 0;
 list-style-type: none;
 text-underline-offset: 0.6rem;
 text-decoration: underline solid 5px;
@@ -137,12 +130,6 @@ header {
     align-items: flex-end;
 }
 
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-    }
-}
-
 #header-portrait {
     width: 100%;
     max-width: 80vw;
@@ -150,8 +137,8 @@ header {
 }
 
 #header > div {
-    width: 70vw;
     height: 100%;
+    width: 100%;
 }
 
 #roles {
@@ -162,7 +149,6 @@ header {
 
 #projects {
     width: 100%;
-    max-width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -186,6 +172,7 @@ header {
 .card-title {
     display: flex;
     align-items: center;
+    text-align: center;
     color: #F5F3E7;
 }
 
@@ -228,6 +215,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 .tools p {
@@ -264,4 +252,25 @@ footer {
     padding: 1em;
     max-width: 60rem;
     color:#F5F3E7;
+}
+
+/*|  @MEDIA  |*/
+
+@media (max-width: 768px) {
+      header h1, header h2, .card-title, #roles {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+     }
+
+     .communication {
+        display: flex;
+        justify-content: center;
+     }
+
+     header {
+    flex-direction: column;
+    align-items: center;
+    }
 }
