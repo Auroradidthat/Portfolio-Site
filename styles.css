@@ -1,12 +1,6 @@
 /*| TYPOGRAPHY |*/
 @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-@media (max-width: 768px) {
-  .card > div {
-    flex-direction: column;
-  }
-}
-
 /*|  GLOBAL  |*/
 
 * {
@@ -137,12 +131,6 @@ header {
     align-items: flex-end;
 }
 
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-    }
-}
-
 #header-portrait {
     width: 100%;
     max-width: 80vw;
@@ -152,6 +140,7 @@ header {
 #header > div {
     width: 70vw;
     height: 100%;
+    width: 100%;
 }
 
 #roles {
@@ -186,6 +175,7 @@ header {
 .card-title {
     display: flex;
     align-items: center;
+    text-align: center;
     color: #F5F3E7;
 }
 
@@ -264,4 +254,16 @@ footer {
     padding: 1em;
     max-width: 60rem;
     color:#F5F3E7;
+}
+
+/*|  @MEDIA  |*/
+
+@media (max-width: 768px) {
+     header > h1, h2, .header-styles, .card-title, #roles {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        align-content: center;
+     }
 }
