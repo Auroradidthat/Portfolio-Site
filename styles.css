@@ -83,6 +83,15 @@ p {
 
 /*|  NAVIGATION  |*/
 
+.skip-link {
+    position: absolute;
+    top: -100%;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
 nav {
     position: sticky;
     top: 0;

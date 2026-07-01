@@ -8,17 +8,18 @@
     </head>
     <body>
 
-        <nav role="navigation">
-            <ul>
+        <a href="#projects-heading" class="skip-link">Skip to main content</a>
+        <nav >
+            <ul role="list">
                 <li><a href="#header">Home</a></li>
                 <li><a href="#projects">Projects</a></li>
             </ul>
         </nav>
 
-        <header id="header" role="banner">
+        <header id="header">
             <div>
                 <h1>AURORA</h1>
-                <h2 id="roles">Front-End Web Developer | Web Designer | Digital Accessibility Analyst</h2>
+                <h2 id="roles" aria-label="Front-end Web Developer, Web Designer, and Digital Accessibility Analyst">Front-End Web Developer | Web Designer | Digital Accessibility Analyst</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
                     nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
@@ -32,13 +33,13 @@
                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
                     eu fugiat nulla pariatur.
                 </p>  
-                <div class="communication">
+                <div class="communication" role="group" aria-label="GitHub">
                     <img class="icons" src="images/github-icon.svg" alt=""/>
-                    <a href="https://github.com/auroradidthat/">Visit My Github</a>
+                    <a rel="me" href="https://github.com/auroradidthat/">Visit My Github</a>
                 </div>
-                <div class="communication">
+                <div class="communication" role="group" aria-label="LinkedIn">
                     <img class="icons" src="images/LinkedIn_icon.svg" alt=""/>
-                    <a href="https://www.linkedin.com/in/rodesignedthat/">Visit My Linkedin</a>
+                    <a rel="me" href="https://www.linkedin.com/in/rodesignedthat/">Visit My Linkedin</a>
                 </div>
             </div>
             <div>
@@ -46,9 +47,9 @@
             </div>
         </header>
 
-        <div id="projects" role="main">
-            <h2>Projects</h2>
-            <a href="https://auroradidthat.github.io/restaurantReviewSite/" target="_blank" rel="noopener noreferrer" class="card-link">
+        <main id="projects" aria-labelledby="projects-heading">
+            <h2 id="projects-heading" >Projects</h2>
+            <a href="https://auroradidthat.github.io/restaurantReviewSite/" target="_blank" rel="noopener noreferrer" class="card-link" aria-label="Restaurant Review Site, opens in new tab">
                 <article class="card">
                     <div class="card-title">
                         <h3>Project Name</h3>
@@ -58,16 +59,16 @@
                             <div>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             </div>
-                            <div class="tool-container">
-                                <div class="tools">
+                            <div class="tool-container" role="list">
+                                <div class="tools" role="listitem">
                                     <img class="icons" src="images/html-5.svg" alt="" />
                                     <p>HTML 5</p>
                                 </div>
-                                <div class="tools">
+                                <div class="tools" role="listitem">
                                     <img class="icons" src="images/javascript.svg" alt="" />
                                     <p>Javascript</p>
                                 </div>
-                                <div class="tools">
+                                <div class="tools" role="listitem">
                                     <img class="icons" src="images/css-3.svg" alt="" />
                                     <p>CSS 3</p>
                                 </div>
@@ -76,8 +77,8 @@
                     </div>
                 </article>
             </a>
-        </div>
-        <footer role="contentinfo">
+        </main>
+        <footer>
             <h2>Accessibility Statement</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus 
                 vitae erat facilisis tincidunt. Integer nec odio praesent libero, sed 
@@ -90,7 +91,6 @@
                Curabitur sodales ligula in libero, sed dignissim lacinia nunc, curabitur 
                tortor pellentesque nibh, aenean quam in scelerisque sem at dolor.
             </p>
-            <br>
             <div class="about-site">
                 <p>Designed in Figma, and coded in Visual Studio Code by me. Built using 
                 vanilla HTML/CSS/JS, with accessibility baked in.</p>
