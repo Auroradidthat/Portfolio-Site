@@ -36,6 +36,7 @@ h2 {
     font-family: "Montserrat", sans-serif;
     font-size: clamp(2rem, 5vw, 3rem);
     font-style: italic;
+    line-height: 2;
     color: #312E81;
     
 }
@@ -50,6 +51,7 @@ p {
      font-family: "Atkinson Hyperlegible Next", sans-serif;
      font-optical-sizing: auto;
     font-size: clamp(1rem, 3vw, 1.5rem);
+    line-height: 2;
     color: #312E81;
 }
 
@@ -230,6 +232,7 @@ header {
 .tools p {
     color: #F5F3E7;
     font-size: 0.875rem;
+    font-weight: bold;
 }
 
 .tool-container {
