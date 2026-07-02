@@ -231,6 +231,7 @@ header {
     color: #F5F3E7;
     font-size: 0.875rem;
     font-weight: bold;
+    margin: 0;
 }
 
 .tool-container {
