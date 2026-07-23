@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Front-end web developer specializing in accessible, WCAG 2.1 AA compliant websites.">
         <title>Aurora Bryant | Front-End Developer</title>
         <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
     </head>
     <body>
         <!-- Google tag (gtag.js) -->
@@ -64,37 +65,7 @@
 
         <main id="projects" aria-labelledby="projects-heading">
             <h2 id="projects-heading" >Projects</h2>
-            <a href="https://auroradidthat.github.io/restaurantReviewSite/" target="_blank" rel="noopener noreferrer" class="card-link" aria-label="Restaurant Review Site, opens in new tab">
-                <article class="card">
-                    <div class="card-title">
-                        <h3>Restaurant Review Site - In Progress</h3>
-                    </div>
-                    <div>
-                        <div class="card-description-stack">
-                            <div>
-                                <p>A restaurant review website that emphasizes how well the restaurant delivers on presence, 
-                                    emotional safety, trust, sensory alignment, and connection. The technologies that will be 
-                                    used are HTML, CSS, and JavaScript. As always, accessibility will be baked into the cake.
-                                </p>
-                            </div>
-                            <div class="tool-container" role="list">
-                                <div class="tools" role="listitem">
-                                    <img class="icons" src="images/html-5.svg" alt="" />
-                                    <p>HTML 5</p>
-                                </div>
-                                <div class="tools" role="listitem">
-                                    <img class="icons" src="images/javascript.svg" alt="" />
-                                    <p>Javascript</p>
-                                </div>
-                                <div class="tools" role="listitem">
-                                    <img class="icons" src="images/css-3.svg" alt="" />
-                                    <p>CSS 3</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-            </a>
+            <div id="projects-list"></div>
         </main>
         <footer>
             <h2>Accessibility Statement</h2>
