@@ -1,14 +1,16 @@
 const projects = [
   {
-    title: "Restaurant Review Site",
+    title: "Grocery List Web App",
     status: "In Progress",
-    description: "A restaurant review website that emphasizes how well the restaurant delivers on presence, emotional safety, trust, sensory alignment, and connection. The technologies that will be used are HTML, CSS, and JavaScript. As always, accessibility will be baked into the cake.",
+    description: "The Grocery List Web App is a mobile-friendly app where users build and manage a personal list of food items with quantities, and the list is saved so a user can return on any device. I built the interface with plain HTML/CSS/JavaScript/SQL, and connected it on Cloudflare which stores each user's data in a database and keeps it private behind a secure login. A public demo version with sample data has been deployed, so anyone can try the app without signing in.",
     technologies: [
       { icon: "images/html-5.svg", label: "HTML 5" },
       { icon: "images/javascript.svg", label: "Javascript" },
-      { icon: "images/css-3.svg", label: "CSS 3" }
+      { icon: "images/css-3.svg", label: "CSS 3" },
+      { icon: "images/sql-icon.svg", label: "SQL"},
+      { icon: "images/json-icon.svg", label: "JSON"}
     ],
-    url: "https://auroradidthat.github.io/restaurantReviewSite/"
+    url: "https://nutrition-demo.rodesignedthat.workers.dev/"
   }
 ];
 
